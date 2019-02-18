@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+プログラム学習用テストプログラム
+2019_02_11
+概要：反転増幅回路の計算ホームページ
+・反転増幅回路の画像を表示
+・抵抗及び、入力電圧記入欄を用意
+・記入した抵抗と、入力電圧から、
+　増幅度、出力電圧を出力
+-->
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>増幅度計算ページ</title>
+    <script type="text/javascript" src="js/calc.js"></script>
+  </head>
+
+
+  <body>
+    <p>反転増幅回路、非反転増幅回路の計算ページです</p>
+    <p>抵抗値R1,R2と、入力電圧を入力してください。</p>
+    <!--<img src="画像の名前" width="横幅の値" height="縦幅の名前" alt="画像の読み上げの名前" title="画像の表示名"  -->
+    <!--画像表示参考リンク：https://techacademy.jp/magazine/5827  -->
+    <!--反転増幅回路と、非反転増幅回路の画像の表示  -->
+    <img src="jpg/Invertingamplifier.jpg" width="400" height="200"alt="反転増幅回路" title="反転増幅回路">
+    <img src="jpg/Noninvertingamplifier.jpg" width ="400" height ="200" alt = "非反転増幅回路" title="非反転増幅回路">
+
+    <!--増幅回路の入力フォーム  -->
+    <form action="#" name="form1">
+    <p> R1入力 <input type="text" name="R1" size="15" onChange="Calc()" value="0"></p>
+    <p> R2入力 <input type="text" name="R2" size="15" onChange="Calc()" value="0"></p>
+    <p> Vin入力<input type="text" name="Vin" size="15" onChange="Calc()" value="0"></p>
+
+    <p> 反転増幅回路増幅度 <input type="text" name="Invertingamplifier_times" size="15" value=0> [倍]=
+         <input type="text" name="Invertingamplifier_log" size="15" value=0>[dB]</p>
+    <p> 出力電圧<input type="text" name="Invertingamplifire_Vout" size="15" value=0>[V]</p>
+
+    <p> 非反転増幅回路増幅度 <input type="text" name="Noninvertingamplifier_times" size="15" value=0>[倍]=
+        <input type="text" name="Noninvertingamplifier_log" size="15" value=0>[dB]</p>
+    <p> 出力電圧<input type="text" name="Noninvertingamplifier_Vout" size="15" value=0>[V]</p>
+    <br>
+
+      </form>
+  </body>
+</html>
+
+<!-- �Q�l:https://www.tagindex.com/javascript/form/comp1b.html-->
